@@ -75,8 +75,8 @@ def home():
 
 @app.route('/comisiones', methods=['POST'])
 def mostrar_comisiones():
-    fecha_inicio = datetime.strptime("2025-06-01", "%Y-%m-%d")
-    fecha_fin = datetime.strptime("2025-07-01", "%Y-%m-%d")
+    fecha_inicio = datetime.strptime(request.form.get('fecha_inicio', '2025-06-01'), "%Y-%m-%d")
+    fecha_fin = datetime.strptime(request.form.get('fecha_fin', '2025-07-01'), "%Y-%m-%d")
 
     resultados = (
         db.session.query(
