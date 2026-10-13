@@ -86,7 +86,7 @@ def mostrar_comisiones():
         )
         .join(Venta)
         .filter(Venta.fecha.between(fecha_inicio, fecha_fin))
-        .group_by(Usuario.idusuarios)
+        .group_by(Usuario.idusuarios, Usuario.nombre, Usuario.apellido)
         .all()
     )
 
