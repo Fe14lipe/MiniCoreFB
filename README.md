@@ -1,7 +1,7 @@
 # MiniCore
 
 LINK VIDEO EXPLICACION MINICORE
-(pendiente)
+https://www.youtube.com/watch?v=CzGuxbRXWwg
 
 LINK GITHUB
 https://github.com/Fe14lipe/MiniCoreFB.git
